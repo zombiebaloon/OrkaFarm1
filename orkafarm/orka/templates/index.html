@@ -1,0 +1,273 @@
+{% extends 'navigation.html' %}
+{% load static %}
+{% block body %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url({% static 'assets/img/turmeric6crop.jpg' %});">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2 style="text-align: center;">WELCOME TO <span>ORKAFARM</span></h2>
+              <p style="text-align: center;">CLEAN, GREEN AND ORGANIC HEALTH IN A BOTTLE</p>
+              <div class="text-center"><a href="{% url 'store' %}" class="btn-get-started"><b>BUY OUR PRODUCTS</b></a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url({% static 'assets/img/farm10.jpeg' %});">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2 style="text-align: center;">PASSION FOR QUALITY</h2>
+              <p style="text-align: center;"><b>“Quality is the Essence”</b></p>
+              <div class="text-center"><a href="{% url 'about' %}" class="btn-get-started"><b>KNOW MORE</b></a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image:url({% static 'assets/img/farm2.jpeg' %}); position: absolute; width: 100%;height: 100%;">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2 style="text-align: center;">SUSTAINABLE FARMING PRACTICES</h2>
+              <p style="text-align: center;"></p>
+              <div class="text-center"><a href="{% url 'farm' %}" class="btn-get-started"><b>KNOW MORE</b></a></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</strong></h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2><img src="{% static 'assets/img/farm6.jpeg' %}" class="img" style="width: 50%; height: 50%;border-radius: 20%;margin-left: 20%;"></h2>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+            <p style="padding-top: 20px;">
+                OrkaFarm (Orka) is a diversified agri-aqua business company focussed on producing fresh and healthy products to its customers at reasonable price.  We at Orka are constantly looking for research-based solutions to improve farm productivity and also share our experiences by providing free consultancy to farmers. At Orka we believe in <b>“Quality is the Essence”</b>
+                The main goal of our foundation is to produce high quality products with our expertise and make them available to consumers efficiently.  Orka also operates on the distribution network of its produce enabling customers to have best quality of its farm yield at a reasonable price.  Apart from traditional supply chain management Orka has adopted modern technology which will enable customers to order Orka products sitting at home <b><a href="{% url 'about' %}">read more...</a></b>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <!-- End Services Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>OUR FARMS</h2>
+          <img src="{% static 'assets/img/farm4.jpeg' %}" class="img" style="width: 60%;height: 60%; border-radius: 10%;";>
+          <p style="padding-top: 20px;">OrkaFarm has its own farms at Kudal, sindhurdurg district spreading to the area of 4 hectares ie 10 acres <b>(girsh need address here )</b>which grows spices like black pepper and turmeric.  Orka has adopted the latest technical and scientific development and have newly setup its own hydroponic farm producing local leafy greens like spinach (30000 plants)and coriander(15000 plants) to exotic leafy greens like Kale(60000 plants)and Swiss chard (60000 plants). Orka’s aqua business mainly concentrates on its farm produce of export quality of shrimps which has annual turn over of 25 tonnes <a href="{% url 'farm' %}">read more...</a></p>
+        </div>
+        </div>
+        </section>
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Products</h2>
+        </div>
+
+        <!-- <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div class="row portfolio-container" data-aos="fade-up">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Our Clients Section ======= -->
+    <!-- End Our Clients Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact" style="text-align: right;">
+                <h3>ORKAFARM</h3>
+                <p>
+                  Village Kochre <br>
+                  Taluka Vengural,Zilha Sindhudurg<br>
+                  Maharashtra,India
+                   <br><br>
+                  <strong>Phone:</strong> +91 836965303<br>
+                  <strong>Email:</strong> info@orkafarm.com<br>
+                </p>
+                
+              </div>
+          <div class="col-lg-2 col-md-6 footer-contact" style="text-align:right;">
+            <h4>USEFUL LINKS</h4>
+            <p><a href="{% url 'index' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>HOME</strong></a></p>
+            <p><a href="{% url 'about' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>ABOUT US</strong></a></p>
+            <p><a href="{% url 'store' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>STORE</strong></a></p>
+            <p><a href="{% url 'contact' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>CONTACT</strong></a></p>
+            <p><a href="{% url 'farm' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>OUR FARM</strong></a></p>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-contact" style="text-align: right;">
+            <h3>LEGAL</h3>
+                <p><a href="{% url 'terms' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>TERMS & CONDITIONS</strong></a></p>
+                <p><a href="{% url 'policy' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>POLICY</strong></a></li></p>
+            
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span>OrkaFarm</span></strong>. All Rights Reserved
+        </div>
+        
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+{% endblock %}
+

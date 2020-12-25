@@ -1,0 +1,101 @@
+
+{% extends 'main.html' %}
+{% load static %}
+{% block contenttt %}
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs" style="color: #009DD7;">
+    <div class="container">
+          
+      <div class="d-flex justify-content-between align-items-center">
+          <h2>About</h2>
+        <ol>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li>Store</li>
+        </ol>
+      </div>
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+  <section id="team" class="team section-bg">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2><strong>Store</strong></h2>
+        
+      </div>
+
+      <div class="row">
+        {% for product in products %}
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up">
+            <div class="member-img">
+              <img src="{{product.ImageURL}}" style="width: 50%;border-radius: 5%;padding-top: 2%;">
+            </div>
+            <div class="member-info">
+              <h4>{{product.name}}</h4>
+              <hr>
+              <!-- <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button> -->
+              <a style= "background-color: #1baabd;" class="btn btn-outline-dark" href="{% url 'productView' product.id %}">More Details</a>
+              <br>
+              <h4 style="display:inline-block;padding-top: 10px;align-items: center;">INR: {{product.price|floatformat:2}}</h4>
+              <br>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      </div>
+  </section>
+
+
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact" style="text-align: right;">
+                <h3>ORKAFARM</h3>
+                <p>
+                  Village Kochre <br>
+                  Taluka Vengural,Zilha Sindhudurg<br>
+                  Maharashtra,India
+                   <br><br>
+                  <strong>Phone:</strong> +91 836965303<br>
+                  <strong>Email:</strong> info@orkafarm.com<br>
+                </p>
+                
+              </div>
+          <div class="col-lg-2 col-md-6 footer-contact" style="text-align:right;">
+            <h4>USEFUL LINKS</h4>
+            <p><a href="{% url 'index' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>HOME</strong></a></p>
+            <p><a href="{% url 'about' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>ABOUT US</strong></a></p>
+            <p><a href="{% url 'store' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>STORE</strong></a></p>
+            <p><a href="{% url 'contact' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>CONTACT</strong></a></p>
+            <p><a href="{% url 'farm' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>OUR FARM</strong></a></p>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-contact" style="text-align: right;">
+            <h3>LEGAL</h3>
+                <p><a href="{% url 'terms' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>TERMS & CONDITIONS</strong></a></p>
+                <p><a href="{% url 'policy' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>POLICY</strong></a></li></p>
+            
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span>OrkaFarm</span></strong>. All Rights Reserved
+        </div>
+        
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+{% endblock contenttt %}

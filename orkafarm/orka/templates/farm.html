@@ -1,0 +1,149 @@
+{% extends 'navigation.html' %}
+{% load static %}
+{% block body %}
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs" style="color: #009DD7;">
+      <div class="container">
+            
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>About</h2>
+          <ol>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li>Our Farms</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2 ><strong>OUR FARMS</strong></h2>
+            <p> <img src="{% static 'assets/img/farm4.jpeg' %}" class="img" style="width: 100%;height: 100%;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;"></p>
+                 
+                
+            <p style= "margin-top: 15%;">main goal of our foundation is to produce high quality products with our expertise and make them available to consumers efficiently.  Orka also operates on the distribution network of its produce enabling customers to have best quality of its farm yield at a reasonable price.  Apart from traditional supply chain management Orka has adopted modern technology which will enable customers to order Orka products sitting at home.</p>
+            <p> <img src="{% static 'assets/img/farm6.jpeg' %}" class="img" style="width: 40%;height: 40%;margin-left: 40%; margin-top: 15%;"></p>
+            
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+ 
+            <p style="margin-top: 20%;">OrkaFarm (Orka) is a diversified agri-aqua business company focussed on producing fresh and healthy products to its customers at reasonable price.  We at Orka are constantly looking for research-based solutions to improve farm productivity and also share our experiences by providing free consultancy to farmers. At Orka we believe in <b>“Quality is the Essence”</b></p>
+
+            <p> <img src="{% static 'assets/img/farm2.jpeg' %}" class="img" style="width: 100%;height: 100%; margin-top: 18%;"></p>
+            <p style="margin-top: 20%;">OrkaFarm (Orka) is a diversified agri-aqua business company focussed on producing fresh and healthy products to its customers at reasonable price.  We at Orka are constantly looking for research-based solutions to improve farm productivity and also share our experiences by providing free consultancy to farmers. At Orka we believe in <b>“Quality is the Essence”</b></p>
+            <p class="font-italic">
+              
+            </p>
+          </div>
+          
+        </div>
+        <br><br>
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2><strong>AQUACULTURE</strong></h2>
+            <p> <img src="{% static 'assets/img/farm5.jpeg' %}" class="img" style="width: 80%;height: 80%;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;"></p>
+                 
+                
+            <p style= "margin-top: 15%;">main goal of our foundation is to produce high quality products with our expertise and make them available to consumers efficiently.  Orka also operates on the distribution network of its produce enabling customers to have best quality of its farm yield at a reasonable price.  Apart from traditional supply chain management Orka has adopted modern technology which will enable customers to order Orka products sitting at home.</p>
+            <p> <img src="{% static 'assets/img/farm1.jpeg' %}" class="img" style="width: 80%;height: 80%; margin-top: 15%;"></p>
+            
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+ 
+            <p style="margin-top: 20%;">OrkaFarm (Orka) is a diversified agri-aqua business company focussed on producing fresh and healthy products to its customers at reasonable price.  We at Orka are constantly looking for research-based solutions to improve farm productivity and also share our experiences by providing free consultancy to farmers. At Orka we believe in <b>“Quality is the Essence”</b></p>
+
+            <p> <img src="{% static 'assets/img/farm10.jpeg' %}" class="img" style="width: 70%;height: 70%; margin-top: 18%;"></p>
+            <p style="margin-top: 20%;">OrkaFarm (Orka) is a diversified agri-aqua business company focussed on producing fresh and healthy products to its customers at reasonable price.  We at Orka are constantly looking for research-based solutions to improve farm productivity and also share our experiences by providing free consultancy to farmers. At Orka we believe in <b>“Quality is the Essence”</b></p>
+            
+            <p class="font-italic">
+              
+            </p>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Our Team Section ======= -->
+    <!-- End Our Team Section -->
+
+    <!-- ======= Our Skills Section ======= -->
+<!-- End Our Skills Section -->
+
+    <!-- ======= Our Clients Section ======= -->
+<!-- End Our Clients Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact" style="text-align: right;">
+              <h3>ORKAFARM</h3>
+              <p>
+                Village Kochre <br>
+                Taluka Vengural,Zilha Sindhudurg<br>
+                Maharashtra,India
+                 <br><br>
+                <strong>Phone:</strong> +91 836965303<br>
+                <strong>Email:</strong> info@orkafarm.com<br>
+              </p>
+              
+            </div>
+        <div class="col-lg-2 col-md-6 footer-contact" style="text-align:right;">
+          <h4>USEFUL LINKS</h4>
+          <p><a href="{% url 'index' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>HOME</strong></a></p>
+          <p><a href="{% url 'about' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>ABOUT US</strong></a></p>
+          <p><a href="{% url 'store' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>STORE</strong></a></p>
+          <p><a href="{% url 'contact' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>CONTACT</strong></a></p>
+          <p><a href="{% url 'farm' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>OUR FARM</strong></a></p>
+        </div>
+        <div class="col-lg-3 col-md-6 footer-contact" style="text-align: right;">
+          <h3>LEGAL</h3>
+              <p><a href="{% url 'terms' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>TERMS & CONDITIONS</strong></a></p>
+              <p><a href="{% url 'policy' %}" style="color:  rgba(255, 255, 255, 0.7);"><strong>POLICY</strong></a></li></p>
+          
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-md-flex py-4">
+
+    <div class="mr-md-auto text-center text-md-left">
+      <div class="copyright">
+        &copy; Copyright <strong><span>OrkaFarm</span></strong>. All Rights Reserved
+      </div>
+      
+    </div>
+    <div class="social-links text-center text-md-right pt-3 pt-md-0">
+      <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+ <!-- End Footer -->
+
+{% endblock %}
