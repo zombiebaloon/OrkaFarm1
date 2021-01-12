@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'pzj8#d9_7)9rgcsc3biv4t+2_aigbxkl6z+x+!%_5q@=vn(kp+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['orkafarmwebsite.herokuapp.com']
 
 
 # Application definition
